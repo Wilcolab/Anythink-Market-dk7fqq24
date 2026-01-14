@@ -15,3 +15,7 @@ if (!module.parent) {
 }
 
 module.exports = app;
+
+function testCopilot() {
+    console.log("This is a test function for Copilot.");
+}
