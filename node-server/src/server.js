@@ -8,6 +8,6 @@ app.get("/", (req, res) => {
 
 const PORT = 8001;
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Node server running on port ${PORT}`);
 });
