@@ -1,14 +1,13 @@
-version: "3"
+version: "3.8"
+
 services:
   python-server:
     build:
       context: ./python-server
       dockerfile: Dockerfile
+    command: python src/app.py
     ports:
       - "8000:8000"
-    volumes:
-      - ./python-server/src:/app/src
-    command: python src/app.py
 
   node-server:
     build:
@@ -16,4 +15,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8001:8001"
-    command: yarn start
